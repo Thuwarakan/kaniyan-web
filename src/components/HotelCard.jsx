@@ -37,7 +37,7 @@ const HotelCard = ({ hotel }) => {
                 <div className="hotel-footer">
                     <div className="price-info">
                         <span className="price-label">Starting from</span>
-                        <span className="price">₹{hotel.price.toLocaleString()}</span>
+                        <span className="price">${hotel.price.toLocaleString()}</span>
                     </div>
                     <button className="view-deal-btn" onClick={handleViewDeal}>View Deal</button>
                 </div>

@@ -24,13 +24,13 @@ const RoomList = () => {
                         </td>
                         <td className="td-sleeps">👤👤</td>
                         <td className="td-price">
-                            <div className="price-val">₹ 12,500</div>
+                            <div className="price-val">$ 180</div>
                             <div className="tax-val">+ taxes</div>
                         </td>
                         <td className="td-select">
                             <select className="room-select">
                                 <option value="0">0</option>
-                                <option value="1">1 (₹ 12,500)</option>
+                                <option value="1">1 ($ 180)</option>
                             </select>
                         </td>
                     </tr>
@@ -44,13 +44,13 @@ const RoomList = () => {
                         </td>
                         <td className="td-sleeps">👤👤</td>
                         <td className="td-price">
-                            <div className="price-val">₹ 18,000</div>
+                            <div className="price-val">$ 250</div>
                             <div className="tax-val">+ taxes</div>
                         </td>
                         <td className="td-select">
                             <select className="room-select">
                                 <option value="0">0</option>
-                                <option value="1">1 (₹ 18,000)</option>
+                                <option value="1">1 ($ 250)</option>
                             </select>
                         </td>
                     </tr>
