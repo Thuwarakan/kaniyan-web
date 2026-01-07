@@ -1,0 +1,122 @@
+.hero-section {
+    background-color: var(--white);
+    color: var(--text-main);
+    padding: 60px 0 40px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-title {
+    font-size: 56px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    color: var(--text-main);
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    margin-bottom: 48px;
+    color: var(--text-light);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+    /* Ensure text is above canvas if needed */
+}
+
+.search-box {
+    background-color: var(--white);
+    padding: 8px;
+    border-radius: var(--radius-pill);
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    border: 1px solid transparent;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    /* Ensure search box is clickable */
+}
+
+.search-box:hover {
+    box-shadow: 0 4px 12px rgba(32, 33, 36, 0.28);
+}
+
+.search-item {
+    flex: 1;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    padding: 8px 24px;
+    border-radius: var(--radius-pill);
+    position: relative;
+}
+
+.search-item:hover {
+    background-color: #f1f3f4;
+}
+
+/* Dividers between items */
+.search-item:not(:last-of-type)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 24px;
+    width: 1px;
+    background-color: var(--border-color);
+}
+
+.search-item:hover::after {
+    display: none;
+}
+
+.input-wrapper {
+    height: 48px;
+}
+
+.input-wrapper .icon {
+    margin-right: 16px;
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.input-wrapper input {
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    font-family: inherit;
+    color: var(--text-main);
+    background: transparent;
+}
+
+.search-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0 32px;
+    height: 48px;
+    border-radius: var(--radius-pill);
+    border: none;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: none;
+}
+
+.search-btn:hover {
+    background-color: var(--primary-hover);
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+}

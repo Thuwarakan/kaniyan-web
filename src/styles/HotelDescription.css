@@ -1,0 +1,105 @@
+.description-section {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.desc-left {
+    flex: 2;
+}
+
+.desc-text {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.popular-facilities h3 {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.facilities-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.facility-item {
+    color: #008009;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.desc-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.rating-box {
+    background: #ebf3ff;
+    padding: 16px;
+    border-radius: var(--radius);
+}
+
+.rating-header {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    align-items: center;
+}
+
+.rating-desc-strong {
+    display: block;
+    font-weight: 700;
+    text-align: right;
+}
+
+.rating-count {
+    font-size: 12px;
+    color: var(--text-light);
+}
+
+.rating-badge-large {
+    background-color: #003580;
+    color: var(--white);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px 6px 6px 0;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.map-box {
+    height: 120px;
+    background-color: #eee;
+    /* Placeholder for map image */
+    border-radius: var(--radius);
+    position: relative;
+    overflow: hidden;
+    background-image: url('https://maps.googleapis.com/maps/api/staticmap?center=Mumbai&zoom=13&size=400x200&sensor=false');
+    /* Mock map url usually requires key, using simple color or pattern if no internet */
+    background: repeating-linear-gradient(45deg,
+            #f0f0f0,
+            #f0f0f0 10px,
+            #e0e0e0 10px,
+            #e0e0e0 20px);
+}
+
+.show-map-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0071c2;
+    color: var(--white);
+    padding: 8px 16px;
+    border-radius: var(--radius);
+    font-weight: 600;
+}

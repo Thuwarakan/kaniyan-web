@@ -1,0 +1,114 @@
+.hotel-card {
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    overflow: hidden;
+    /* Important for rounding */
+    background: var(--white);
+    transition: box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.hotel-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-color: transparent;
+}
+
+.hotel-image-container {
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Remove corner rating, use clean one */
+.hotel-rating {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: var(--text-main);
+    padding: 4px 8px;
+    border-radius: var(--radius-pill);
+    font-weight: 700;
+    font-size: 14px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-content {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.hotel-name {
+    font-size: 20px;
+    font-weight: 500;
+    /* Google Sans style */
+    color: var(--text-main);
+    margin-bottom: 4px;
+}
+
+.hotel-stars {
+    color: #fbbc04;
+    /* Google Yellow */
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.hotel-location {
+    color: var(--text-light);
+    font-size: 14px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.hotel-tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: #f1f3f4;
+    color: var(--text-light);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: var(--radius-pill);
+}
+
+.hotel-footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border-color);
+    padding-top: 16px;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--text-main);
+}
+
+.view-deal-btn {
+    background-color: transparent;
+    color: var(--primary-color);
+    padding: 8px 16px;
+    border-radius: var(--radius-pill);
+    font-weight: 600;
+    font-size: 14px;
+    border: 1px solid var(--border-color);
+    transition: all 0.2s;
+}
+
+.view-deal-btn:hover {
+    background-color: #e8f0fe;
+    color: #1a73e8;
+    border-color: transparent;
+}

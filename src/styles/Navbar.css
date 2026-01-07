@@ -1,0 +1,94 @@
+.navbar {
+    background-color: var(--white);
+    color: var(--text-main);
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+}
+
+.navbar-logo {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--text-light);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* Simulate Google multi-color logo feeling simply with a dot or similar */
+.navbar-logo::after {
+    content: '.';
+    color: var(--primary-color);
+    font-size: 32px;
+    line-height: 0;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 8px;
+}
+
+.nav-btn {
+    background-color: transparent;
+    color: var(--primary-color);
+    padding: 8px 24px;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--border-color);
+}
+
+.nav-btn:hover {
+    background-color: #f1f3f4;
+    border-color: transparent;
+}
+
+/* Style for the secondary nav bar (categories) */
+.navbar-bottom {
+    margin-top: 0;
+    padding-top: 12px;
+    padding-bottom: 0;
+    overflow-x: auto;
+}
+
+.nav-categories {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    padding: 0;
+    /* Scrollbar hiding if needed */
+}
+
+.nav-categories li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: var(--radius-pill);
+    font-size: 14px;
+    color: var(--text-light);
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.nav-categories li:hover {
+    background-color: #f1f3f4;
+    color: var(--text-main);
+}
+
+.nav-categories li.active {
+    background-color: var(--accent-color);
+    color: var(--accent-text);
+    border: none;
+}
