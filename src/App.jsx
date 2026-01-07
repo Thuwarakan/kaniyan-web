@@ -7,7 +7,7 @@ import HotelDetailsPage from './pages/HotelDetailsPage';
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <div className="App">
         <Routes>
           <Route path="/" element={<HomePage />} />
